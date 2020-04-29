@@ -1,4 +1,7 @@
-﻿.description {
+﻿#header {
+    background-image: url(banner.jpg)
+}
+.description {
     margin: 2rem 5%;
     font-size: 1.2rem;
     font-weight: bold;
