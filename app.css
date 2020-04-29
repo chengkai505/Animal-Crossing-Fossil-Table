@@ -1,4 +1,10 @@
-﻿#app {
+﻿.description {
+    margin: 2rem 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+#app {
     display: flex;
     margin: 6rem 5%;
     flex-wrap: wrap;
