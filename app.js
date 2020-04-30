@@ -1,5 +1,5 @@
 ﻿'use strict';
-if (location.hash.substr(1).length == 15) {
+if (location.hash.substr(1).length == Math.ceil(document.getElementsByClassName("checkbox").length / 5)) {
     if (!decode()) {
         alert("解析失敗");
     }
