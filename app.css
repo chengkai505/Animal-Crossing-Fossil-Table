@@ -37,6 +37,12 @@
         font-weight: bold;
         transform: translateY(-50%);
     }
+    .list tr {
+        transition: var(--theme-transition);
+    }
+    .list tr.hidden {
+        opacity: .2
+    }
     .list td {
         padding: .5rem 1rem;
         color: #333;

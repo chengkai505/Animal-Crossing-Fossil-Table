@@ -18,6 +18,19 @@ document.getElementById("app").addEventListener("change", function (e) {
     }
 });
 
+document.getElementById("hidden-got").addEventListener("click", function () {
+    this.classList.toggle("active");
+    let tr = document.getElementsByTagName("tr");
+    for (let i = 0; i < tr.length; i++) {
+        let cb = tr[i].getElementsByClassName("checkbox")[0];
+        if (cb.selected) {
+            tr[i].classList.add("hidden");
+        } else {
+            tr[i].classList.remove("hidden");
+        }
+    }
+});
+
 function boolToInt(value) {
     return value ? 1 : 0;
 }
