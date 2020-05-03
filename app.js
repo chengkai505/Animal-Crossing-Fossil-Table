@@ -23,7 +23,7 @@ document.getElementById("hidden-got").addEventListener("click", function () {
     let tr = document.getElementsByTagName("tr");
     for (let i = 0; i < tr.length; i++) {
         let cb = tr[i].getElementsByClassName("checkbox")[0];
-        if (cb.selected) {
+        if (cb.checked) {
             tr[i].classList.add("hidden");
         } else {
             tr[i].classList.remove("hidden");
