@@ -13,6 +13,9 @@ document.getElementById("app").addEventListener("change", function (e) {
         let checkboxs = document.getElementsByClassName("checkbox");
         for (let i = 0; i < data.length; i++) {
             data[i] = boolToInt(checkboxs[i].checked);
+            if (document.getElementById("hidden-got").classList.contains("active")) {
+                e.target.parentElement.parentElement.classList.add("hidden");
+            }
         }
         encode();
     }
