@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 if (location.hash.substr(1).length == Math.ceil(document.getElementsByClassName("checkbox").length / 5)) {
     if (!decode()) {
         alert("解析失敗");
@@ -36,6 +36,13 @@ document.getElementById("hidden-got").addEventListener("click", function () {
             tr[i].classList.remove("hidden");
         }
     }
+});
+document.getElementById("clear-all").addEventListener("click", function() {
+	let nodes = document.getElementsByClassName("checkbox");
+	for (let node of nodes) {
+		node.checked = false;
+	}
+	encode();
 });
 
 function boolToInt(value) {
